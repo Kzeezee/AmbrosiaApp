@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Menu Item"
+        android:fontFamily="@font/lemonmilkbold"
+        android:textSize="30dp"
+        android:layout_marginVertical="15dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemonmilkregular"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:textAlignment="center"
+        android:text="Please enter your food item information:" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/lemonmilklight"
+        android:text="Dish Name:" />
+
+    <EditText
+        android:id="@+id/mealname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/lemonmilklight"
+        android:ems="15"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/lemonmilklight"
+        android:text="Meal Type:" />
+
+    <Spinner
+        android:id="@+id/mealtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:textAlignment="center"
+        android:entries="@array/meal_type"/>
+
+    <ImageView
+        android:id="@+id/mealicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/mainicon" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/lemonmilklight"
+        android:text="No. of Calories:" />
+
+    <EditText
+        android:id="@+id/mealcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemonmilklight"
+        android:ems="8"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/lemonmilkregular"
+        android:text="Upon adding, you can tap on the item on the dashboard to bring up the QR Code for customers to scan"
+        android:textAlignment="center"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/addMenuItemB"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:fontFamily="@font/lemonmilkregular"
+        android:padding="15dp"
+        android:text="Add" />
+
+    <ProgressBar
+        android:id="@+id/ProgressbarAddMenuItem"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:visibility="invisible" />
+
+</android.widget.LinearLayout>

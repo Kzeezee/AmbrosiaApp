@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:textColor="#000000"
+            android:fontFamily="@font/lemonmilkbold"
+            android:text="Lifestyle Energized" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemonmilklight"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="0.02"
+            android:textColor="#7A7A7A"
+            android:textSize="24dp"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemonmilkregular"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:text="E-mail" />
+
+        <EditText
+            android:id="@+id/emailL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/lemonmilkregular"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/passwordL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginB"
+            style="@style/Widget.AppCompat.Button"
+            android:backgroundTint="#0030DD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:fontFamily="@font/lemonmilkregular"
+            android:padding="20dp"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/lemonmilkregular"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:text="Don't have an account?" />
+
+        <TextView
+            android:id="@+id/registertextclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="0.05"
+            android:clickable="true"
+            android:fontFamily="@font/lemonmilkregular"
+            android:onClick="registerdirect"
+            android:text="Click here!"
+            android:textAlignment="center"
+            android:textColor="#008EE0"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/ProgressbarL"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/userProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/Scan_Tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+
+                            <com.budiyev.android.codescanner.CodeScannerView
+                                android:id="@+id/scanner_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:autoFocusButtonColor="@android:color/white"
+                                app:autoFocusButtonVisible="true"
+                                app:flashButtonColor="@android:color/white"
+                                app:flashButtonVisible="true"
+                                app:frameAspectRatioHeight="1"
+                                app:frameAspectRatioWidth="1"
+                                app:frameColor="@android:color/white"
+                                app:frameCornersRadius="0dp"
+                                app:frameCornersSize="50dp"
+                                app:frameSize="0.75"
+                                app:frameThickness="2dp"
+                                app:maskColor="#77000000" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Manual_Tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="15dp"
+                            android:fontFamily="@font/lemonmilkbold"
+                            android:text="Add Food to Tracker"
+                            android:textAlignment="center"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:fontFamily="@font/lemonmilkregular"
+                            android:text="Please enter your food item information:"
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/userFoodIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="15dp"
+                            android:layout_weight="0.1"
+                            app:srcCompat="@drawable/drinksicon" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lemonmilklight"
+                            android:text="Dish Name:"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/userFoodName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ems="15"
+                            android:fontFamily="@font/lemonmilklight"
+                            android:inputType="text"
+                            android:text=""
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lemonmilklight"
+                            android:text="Meal Type:"
+                            android:textAlignment="center" />
+
+                        <Spinner
+                            android:id="@+id/userFoodType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="15dp"
+                            android:entries="@array/meal_type"
+                            android:textAlignment="center" />
+
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lemonmilklight"
+                            android:text="No. of Calories:"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/userFoodCalories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ems="8"
+                            android:fontFamily="@font/lemonmilklight"
+                            android:inputType="number"
+                            android:text=""
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/lemonmilkregular"
+                            android:text="Upon adding, this information will be added in the calories tracker.\nFavourite saves food information to re-add it easily again"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <Button
+                            android:id="@+id/clearFieldB"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="5dp"
+                            android:fontFamily="@font/lemonmilkregular"
+                            android:text="Clear Fields" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/userFavouriteB"
+                                style="@style/Widget.AppCompat.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="20dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:fontFamily="@font/lemonmilkregular"
+                                android:padding="15dp"
+                                android:text="Favourite"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16dp" />
+
+                            <Button
+                                android:id="@+id/userFoodAddB"
+                                style="@style/Widget.AppCompat.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="20dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:fontFamily="@font/lemonmilkregular"
+                                android:padding="15dp"
+                                android:text="Add"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Quick_Add"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/lemonmilkregular"
+                            android:text="Favourited Items:"
+                            android:textSize="23dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_favourite"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/lemonmilkregular"
+                            android:text="Swipe Left to Delete \nTap on an item to quick add"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

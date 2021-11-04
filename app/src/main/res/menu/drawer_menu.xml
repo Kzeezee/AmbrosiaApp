@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General"
+        android:id="@+id/menugeneral">
+        <menu>
+            <item
+                android:id="@+id/menuihome"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/menuitoday"
+                android:icon="@drawable/ic_today"
+                android:title="Daily Information" />
+            <!--<item
+                android:id="@+id/menuisummary"
+                android:icon="@drawable/ic_status"
+                android:title="Calories Summary" />
+                -->
+            <item
+                android:id="@+id/menuiepicurious"
+                android:icon="@drawable/ic_search"
+                android:title="Find Recipes" />
+        </menu>
+    </item>
+
+    <item android:title="Management"
+        android:id="@+id/menumanagement">
+        <menu>
+            <item
+                android:id="@+id/menuiprofile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile Settings" />
+            <item
+                android:id="@+id/menuisignout"
+                android:icon="@drawable/ic_exit"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+    <item android:title="Vendors Management"
+        android:id="@+id/menuvendor">
+        <menu>
+            <item
+                android:id="@+id/menuivendorhome"
+                android:icon="@drawable/ic_home"
+                android:title="Dashboard" />
+            <item
+                android:id="@+id/menuiadditem"
+                android:icon="@drawable/ic_add"
+                android:title="Add New Food Item" />
+            <item
+                android:id="@+id/menuivendorsignout"
+                android:icon="@drawable/ic_exit"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

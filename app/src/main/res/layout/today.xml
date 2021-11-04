@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="15dp"
+    android:orientation="vertical"
+    tools:context=".Today">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemonmilkbold"
+        android:textSize="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:text="Calories Intake for Today" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemonmilkregular"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Swipe left to delete an item" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemonmilkregular"
+        android:textSize="18dp"
+        android:layout_marginVertical="5dp"
+        android:text="Food eaten today:" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_main"
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemonmilklight"
+        android:textSize="15dp"
+        android:text="Here are some recommendations to improving your diet today:" />
+
+    <TextView
+        android:id="@+id/improvements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lemonmilklight"
+        android:textSize="12dp"
+        android:layout_marginBottom="20dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:fontFamily="@font/lemonmilkregular"
+        android:layout_margin="10dp"
+        android:text="Refresh" />
+
+</LinearLayout>

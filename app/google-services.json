@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "345206859785",
+    "firebase_url": "https://ambrosia-a4478.firebaseio.com",
+    "project_id": "ambrosia-a4478",
+    "storage_bucket": "ambrosia-a4478.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345206859785:android:5a1611aeabca5ee528f0d8",
+        "android_client_info": {
+          "package_name": "com.sp.ambrosia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345206859785-ueh9l7lhtrt1lvhhb0oenl8vr4qcd4br.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "INSERT_API_KEY_HERE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345206859785-ueh9l7lhtrt1lvhhb0oenl8vr4qcd4br.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
