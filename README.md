@@ -84,3 +84,5 @@ Ambrosia also features a navigation drawer allowing access to the following:
   Ambrosia seeks to promote healthy eating by simplifying and easing users' dietary intake. Many people are often shunned away from taking healthy meal habits as it is too much of a hassle to record and take note of the various nutritional information they take in. 
   
   Ambrosia aims to amend this by providing a more hassle-free approach in assisting users in keeping track of their nutritional intake history, allowing technology to provide us with a more convenient way of life.
+  
+  In the future, Ambrosia hopes to incentivise both vendors and users to use Ambrosia and promote conscious eating by allowing vendors to customise or reward concescutive customers to their establishment.
